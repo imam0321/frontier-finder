@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "Software Engineer",
+    "companyName": "TechCo",
+    "jobType": "Full-time",
+    "location": "New York, NY",
+    "salary": "$25,000 - $30,000",
+    "jobDescription": "We are looking for a talented Software Engineer to join our team.",
+    "jobResponsibility": "Develop and maintain software applications, collaborate with cross-functional teams, troubleshoot and debug issues.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "2+ years of software development experience",
+    "contact": {
+      "phone": "123-456-7890",
+      "email": "jobs@techco.com"
+    }
+  },
+  {
+    "id": 2,
+    "img": "../src/assets/Logo/google-1-1 1.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "MarketingPros",
+    "jobType": "Contract",
+    "location": "Los Angeles, CA",
+    "salary": "$25,000 - $30,000",
+    "jobDescription": "We are seeking an experienced Marketing Manager to lead our marketing efforts.",
+    "jobResponsibility": "Plan and execute marketing campaigns, analyze data, manage marketing team, report to senior management.",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field",
+    "experience": "5+ years of marketing experience",
+    "contact": {
+      "phone": "987-654-3210",
+      "email": "hr@marketingpros.com"
+    }
+  },
+  {
+    "id": 3,
+    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "Data Analyst",
+    "companyName": "Data Insights",
+    "jobType": "Full-time",
+    "location": "San Francisco, CA",
+    "salary": "$30,000 - $35,000",
+    "jobDescription": "We are hiring a Data Analyst to analyze and interpret data to help drive business decisions.",
+    "jobResponsibility": "Collect and analyze data, generate reports, work with stakeholders to identify insights.",
+    "educationalRequirements": "Bachelor's degree in Statistics or related field",
+    "experience": "3+ years of data analysis experience",
+    "contact": {
+      "phone": "555-123-4567",
+      "email": "careers@datainsights.com"
+    }
+  },
+  {
+    "id": 4,
+    "img": "../src/assets/Logo/netflix-4 1.png",
+    "jobTitle": "Graphic Designer",
+    "companyName": "DesignCraft",
+    "jobType": "Part-time",
+    "location": "Chicago, IL",
+    "salary": "$20,000 - $25,000",
+    "jobDescription": "We are looking for a creative Graphic Designer to join our design team.",
+    "jobResponsibility": "Design graphics for marketing materials, collaborate with the design team, follow brand guidelines.",
+    "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
+    "experience": "2+ years of graphic design experience",
+    "contact": {
+      "phone": "800-555-1234",
+      "email": "designer@designcraft.com"
+    }
+  },
+  {
+    "id": 5,
+    "img": "../src/assets/Logo/tesla-9 1.png",
+    "jobTitle": "Financial Analyst",
+    "companyName": "FinancePro",
+    "jobType": "Full-time",
+    "location": "Houston, TX",
+    "salary": "$28,000 - $33,000",
+    "jobDescription": "We are seeking a Financial Analyst to assist with financial planning and analysis.",
+    "jobResponsibility": "Analyze financial data, create financial models, prepare reports for management.",
+    "educationalRequirements": "Bachelor's degree in Finance or related field",
+    "experience": "3+ years of financial analysis experience",
+    "contact": {
+      "phone": "888-555-7890",
+      "email": "jobs@financepro.com"
+    }
+  },
+  {
+    "id": 6,
+    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "Customer Support Representative",
+    "companyName": "SupportX",
+    "jobType": "Full-time",
+    "location": "Austin, TX",
+    "salary": "$22,000 - $27,000",
+    "jobDescription": "Join our customer support team and help our customers with their inquiries and issues.",
+    "jobResponsibility": "Assist customers via phone and email, resolve inquiries, provide product information.",
+    "educationalRequirements": "High school diploma or equivalent",
+    "experience": "1+ year of customer support experience",
+    "contact": {
+      "phone": "877-555-4321",
+      "email": "support@supportx.com"
+    }
+  },
+  {
+    "id": 7,
+    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "Human Resources Manager",
+    "companyName": "HR Solutions",
+    "jobType": "Full-time",
+    "location": "Seattle, WA",
+    "salary": "$35,000 - $40,000",
+    "jobDescription": "We are hiring an HR Manager to oversee our human resources department.",
+    "jobResponsibility": "Manage HR operations, recruitment, employee relations, HR policies.",
+    "educationalRequirements": "Bachelor's degree in Human Resources or related field",
+    "experience": "4+ years of HR management experience",
+    "contact": {
+      "phone": "866-555-5678",
+      "email": "hrmanager@hrsolutions.com"
+    }
+  },
+  {
+    "id": 8,
+    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "Sales Representative",
+    "companyName": "SalesForce",
+    "jobType": "Commission-based",
+    "location": "Miami, FL",
+    "salary": "Commission-based",
+    "jobDescription": "Join our sales team and help drive sales of our products and services.",
+    "jobResponsibility": "Prospect and generate leads, make sales presentations, close deals, meet sales targets.",
+    "educationalRequirements": "High school diploma or equivalent",
+    "experience": "2+ years of sales experience",
+    "contact": {
+      "phone": "877-888-9999",
+      "email": "sales@salesforce.com"
+    }
+  }
+]
