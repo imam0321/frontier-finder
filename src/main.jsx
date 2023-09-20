@@ -10,6 +10,8 @@ import Statistics from './Components/Statistics/Statistics';
 import CoverPage from './Components/CoverPage/CoverPage';
 import JobCategory from './Components/JobCategory/JobCategory';
 import FirstPage from './Components/Layout/FirstPage';
+import JobDetail from './Components/JobDetail/JobDetail';
+import Jobs from './Components/Jobs/Jobs';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <FirstPage></FirstPage>,
-        loader: () => fetch('jobCategories.json')
+        loader: () => fetch('jobs.json')
+      },
+      {
+        path: 'job-detail',
+        element: <JobDetail></JobDetail>
       },
       {
         path: '/statistics',
