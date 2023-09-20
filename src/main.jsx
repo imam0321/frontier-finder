@@ -5,9 +5,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Components/Home/Home';
+import Home from './Components/Layout/Home';
 import Statistics from './Components/Statistics/Statistics';
 import CoverPage from './Components/CoverPage/CoverPage';
+import JobCategory from './Components/JobCategory/JobCategory';
+import FirstPage from './Components/Layout/FirstPage';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element:<CoverPage></CoverPage>
+        element: <FirstPage></FirstPage>,
+        loader: () => fetch('jobCategories.json')
       },
       {
         path: '/statistics',
