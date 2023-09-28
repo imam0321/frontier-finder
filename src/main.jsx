@@ -7,13 +7,10 @@ import {
 } from "react-router-dom";
 import Home from './Components/Layout/Home';
 import Statistics from './Components/Statistics/Statistics';
-
 import JobDetail from './Components/JobDetail/JobDetail';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blogs from './Components/Blogs/Blogs';
-
-import jobsLoaders from './Components/Loaders/jobsLoaders';
-import CoverPage from './Components/CoverPage/CoverPage';
+import FirstPage from './Components/Layout/FirstPage';
 
 const router = createBrowserRouter([
   {
@@ -22,14 +19,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <CoverPage></CoverPage>,
-        loader: jobsLoaders
-        
+        element: <FirstPage></FirstPage>,
       },
       {
-        path: '/:jobId',
+        path: '/:id',
         element: <JobDetail></JobDetail>,
-        loader: jobsLoaders
       },
       {
         path: 'statistics',

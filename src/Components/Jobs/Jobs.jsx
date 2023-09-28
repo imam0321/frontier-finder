@@ -1,10 +1,15 @@
-import { useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import { useContext, useEffect } from "react";
+import { JobsContext } from "../Layout/FirstPage";
 
 const Jobs = () => {
-  const {jobs} = useLoaderData();
-
+  const [jobs, setJobs] = useContext(JobsContext)
+  useEffect(()=>{
+    fetch('jobs.json')
+    .then(res => res.json())
+    .then(data => setJobs(data))
+  })
   return (
     <div >
       <SectionTitle 

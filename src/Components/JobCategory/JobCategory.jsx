@@ -44,7 +44,6 @@ const JobCategory = () => {
           ></JobCategoryDetail>)
       }   
       </div> 
-      <Jobs></Jobs>  
     </div>
   );
 };
