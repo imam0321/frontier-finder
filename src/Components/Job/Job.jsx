@@ -20,7 +20,7 @@ const Job = ({ job }) => {
             <span>{salary}</span>
           </div>
         </div>
-        <Link to='/job-detail' className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-5 py-2">View Details</Link>
+        <Link to= {`/${id}`} className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-5 py-2">View Details</Link>
       </div>
       
     </div>

@@ -7,11 +7,13 @@ import {
 } from "react-router-dom";
 import Home from './Components/Layout/Home';
 import Statistics from './Components/Statistics/Statistics';
-import CoverPage from './Components/CoverPage/CoverPage';
-import JobCategory from './Components/JobCategory/JobCategory';
-import FirstPage from './Components/Layout/FirstPage';
+
 import JobDetail from './Components/JobDetail/JobDetail';
-import Jobs from './Components/Jobs/Jobs';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
+import Blogs from './Components/Blogs/Blogs';
+
+import jobsLoaders from './Components/Loaders/jobsLoaders';
+import CoverPage from './Components/CoverPage/CoverPage';
 
 const router = createBrowserRouter([
   {
@@ -20,16 +22,26 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <FirstPage></FirstPage>,
-        loader: () => fetch('jobs.json')
+        element: <CoverPage></CoverPage>,
+        loader: jobsLoaders
+        
       },
       {
-        path: 'job-detail',
-        element: <JobDetail></JobDetail>
+        path: '/:jobId',
+        element: <JobDetail></JobDetail>,
+        loader: jobsLoaders
       },
       {
-        path: '/statistics',
+        path: 'statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: 'applied-jobs',
+        element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: 'blogs',
+        element: <Blogs></Blogs>
       }
     ]
   },

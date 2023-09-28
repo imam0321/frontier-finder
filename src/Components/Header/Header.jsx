@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   
   return (
@@ -10,9 +9,10 @@ const Header = () => {
         <Link className="mr-10" to='/'>Home</Link>
         <Link className="mr-10" to='/statistics'>Statistics</Link>
         <Link className="mr-10" to='/applied-jobs'>Applied Jobs</Link>
-        <Link to='/blog'>Blog</Link>
+        <Link to='/blogs'>Blogs</Link>
       </div>
       <button className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-6 py-3">Star Applying</button>
+      
     </nav>
   );
 };

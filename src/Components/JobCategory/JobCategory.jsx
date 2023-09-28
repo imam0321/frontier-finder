@@ -1,4 +1,6 @@
 import JobCategoryDetail from "../JobCategoryDetail/JobCategoryDetail";
+import Jobs from "../Jobs/Jobs";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const JobCategory = () => {
   const jobCategories = [
@@ -30,10 +32,10 @@ const JobCategory = () => {
 
   return (
     <div className="mx-60">
-      <div className="text-center mt-20 mb-6">
-        <h2 className="text-[36px] font-semibold mb-2">Job Category List</h2> 
-        <p className="text-sm text-gray-500">Explore thousands of job opportunities with all the information you need. Its your future</p>
-      </div>
+      <SectionTitle 
+        heading={'Job Category List'} 
+        subHeading={'Explore thousands of job opportunities with all the information you need. Its your future'}
+      ></SectionTitle>
       <div className="flex justify-around items-center mb-16">
       {
         jobCategories.map(category => <JobCategoryDetail 
@@ -41,7 +43,8 @@ const JobCategory = () => {
           category={category}
           ></JobCategoryDetail>)
       }   
-      </div>   
+      </div> 
+      <Jobs></Jobs>  
     </div>
   );
 };
