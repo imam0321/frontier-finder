@@ -4,17 +4,18 @@ import CoverPage from '../CoverPage/CoverPage';
 import JobCategory from '../JobCategory/JobCategory';
 import Jobs from '../Jobs/Jobs';
 
-export const JobsContext = createContext()
+export const JobsContext = createContext(null)
 
 const FirstPage = () => {
   const [jobs, setJobs] = useState([])
   // console.log(jobs);
   return (
-    <JobsContext.Provider value={[jobs, setJobs]}>
-      <CoverPage></CoverPage>
+    <>
+    <CoverPage></CoverPage>
       <JobCategory></JobCategory>
       <Jobs></Jobs>
-    </JobsContext.Provider>
+    </>
+    
   );
 };
 

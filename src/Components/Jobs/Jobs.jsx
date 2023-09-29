@@ -1,15 +1,11 @@
 import Job from "../Job/Job";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { JobsContext } from "../Layout/FirstPage";
 
 const Jobs = () => {
-  const [jobs, setJobs] = useContext(JobsContext)
-  useEffect(()=>{
-    fetch('jobs.json')
-    .then(res => res.json())
-    .then(data => setJobs(data))
-  })
+  const [jobs] = useContext(JobsContext);
+  
   return (
     <div >
       <SectionTitle 

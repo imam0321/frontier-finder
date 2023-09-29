@@ -1,9 +1,10 @@
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Job = ({ job }) => {
   const {id, img, jobTitle, companyName, jobType, location, salary} = job;
   const navigate = useNavigate();
+
   return (
     <div>
       <div className="border-solid border rounded pl-8 py-6 pr-7">
@@ -23,7 +24,6 @@ const Job = ({ job }) => {
         </div>
         <button onClick={()=> navigate(`/${id}`)} className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-5 py-2">View Details</button>
       </div>
-      
     </div>
   );
 };

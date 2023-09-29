@@ -1,5 +1,4 @@
 import JobCategoryDetail from "../JobCategoryDetail/JobCategoryDetail";
-import Jobs from "../Jobs/Jobs";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 const JobCategory = () => {

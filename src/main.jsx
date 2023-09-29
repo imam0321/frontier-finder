@@ -10,7 +10,8 @@ import Statistics from './Components/Statistics/Statistics';
 import JobDetail from './Components/JobDetail/JobDetail';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blogs from './Components/Blogs/Blogs';
-import FirstPage from './Components/Layout/FirstPage';
+import FirstPage, { JobsContext } from './Components/Layout/FirstPage';
+import Data from '../public/jobs.json';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {
         path: '/:id',
         element: <JobDetail></JobDetail>,
+        
       },
       {
         path: 'statistics',
@@ -41,8 +43,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render( 
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <JobsContext.Provider value={[Data]}>   
+      <RouterProvider router={router} />
+    </JobsContext.Provider>
   </React.StrictMode>,
 )
