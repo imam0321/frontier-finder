@@ -1,4 +1,4 @@
-import JobCategory from "../JobCategory/JobCategory";
+// import JobCategory from "../JobCategory/JobCategory";
 
 const CoverPage = () => {
   return (
