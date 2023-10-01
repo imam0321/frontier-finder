@@ -2,9 +2,11 @@ import Job from "../Job/Job";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { useContext, useEffect, useState } from "react";
 import { JobsContext } from "../Layout/FirstPage";
+import { addToDb } from "../utilities/fakedb";
 
 const Jobs = () => {
   // const [jobs, setJobs] = useState([])
+  
   const [jobs] = useContext(JobsContext);
   // useEffect(()=>{
   //   fetch('jobs.json')
@@ -16,6 +18,7 @@ const Jobs = () => {
   //     if(limit && job)
   //   }
   // }
+ 
   
   return (
     <div >
@@ -30,6 +33,7 @@ const Jobs = () => {
             jobs.map(job => <Job 
               key={job.id}
               job={job}
+              // handelAddToJob={handelAddToJob}
               ></Job>)
           }
         </div>

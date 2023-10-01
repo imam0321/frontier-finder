@@ -12,6 +12,7 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blogs from './Components/Blogs/Blogs';
 import FirstPage, { JobsContext } from './Components/Layout/FirstPage';
 import Data from '../public/jobs.json';
+import jobsLoaders from './Components/Loaders/jobsLoaders';
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'applied-jobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+
       },
       {
         path: 'blogs',

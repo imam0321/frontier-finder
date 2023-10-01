@@ -2,7 +2,7 @@ import Media from '../../assets/Icons/Group 9969.png'
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-white py-20 px-24'>
+    <footer className='bg-black text-white py-20 px-24 mb-0 mt-5'>
       <div className='grid grid-cols-12 gap-32'>
         <div className="col-span-2">
           <h1 className='text-lg font-semibold mb-2'>Frontier Finder</h1>

@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapIcon} from '@heroicons/react/24/solid'
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { JobsContext } from "../Layout/FirstPage";
-
+import { addToDb } from "../utilities/fakedb";
 
 const JobDetail = () => {
+
   const  [jobs] = useContext(JobsContext);
   const {id}  = useParams();
   const job = jobs.find(job => job.id === Number(id))
@@ -12,7 +13,25 @@ const JobDetail = () => {
   const { jobTitle, jobDescription, location, salary, educationalRequirements, jobResponsibility, experience } = job;
   const { phone, email } = job.contact;
   
- 
+  
+  const [jobCart, setJobCart] = useState([])
+
+  const handelAddToJob = (selectedJob) =>{
+    let newJob = 0;
+    const exists = jobCart.find(jb => jb.id === selectedJob.id )
+    if(!exists){
+      selectedJob.quantity = 1;
+      newJob = [...jobCart, selectedJob];
+    }
+    else{
+      const rest = jobCart.filter(jb => jb.id !== selectedJob.id);
+      exists.quantity = exists.quantity + 1; // work for this condition
+      newJob = [...rest, exists] 
+    }
+    setJobCart(newJob)
+    addToDb(selectedJob.id)
+  }
+  
   return (
     <section className="">
       <img className="-ml-44 -mt-40" src="/src/assets/All Images/Vector.png" alt="" />
@@ -55,7 +74,7 @@ const JobDetail = () => {
             </div>
           </div> 
         </div>
-        <button className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-24 py-2">Apply Now</button>
+        <button onClick={() => handelAddToJob(job)} className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-24 py-2">Apply Now</button>
       </div>
     </div>
     </section>
