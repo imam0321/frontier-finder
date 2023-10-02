@@ -1,10 +1,10 @@
-import React from 'react';
+
 
 const AppliedJobDetail = ({ job }) => {
-  console.log(job);
+  const { id } = job
   return (
     <div>
-      <h1>hello</h1>
+      <h1>hello {id}</h1>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const jobsLoaders = async () =>{
   const storedJobCart = getShoppingCart();
   // console.log(storedJobCart);
   const saveJobCart = []
-  for(const id of storedJobCart){
+  for(const id in storedJobCart){
     const addedJobs = jobs.find(jb => jb.id === id)
     if(addedJobs){
       const quantity = storedJobCart[id]
