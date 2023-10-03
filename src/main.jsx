@@ -14,6 +14,7 @@ import FirstPage, { JobsContext } from './Components/Layout/FirstPage';
 import Data from '../public/jobs.json';
 import jobsLoaders from './Components/Loaders/jobsLoaders';
 import Jobs from './Components/Jobs/Jobs';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: 'blogs',
         element: <Blogs></Blogs>
+      },
+      {
+        path: '*',
+        element: <ErrorPage></ErrorPage> 
       }
     ]
   },
