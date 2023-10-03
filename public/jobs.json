@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "img": "../src/assets/Logo/google-1-1 1.png",
+    "img": "../src/assets/Logo/netflix-4 1.png",
     "jobTitle": "Marketing Manager",
     "companyName": "MarketingPros",
     "jobType": "Contract",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "img": "../src/assets/Logo/google-1-1 1.png",
     "jobTitle": "Data Analyst",
     "companyName": "Data Insights",
     "jobType": "Full-time",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "img": "../src/assets/Logo/netflix-4 1.png",
+    "img": "../src/assets/Logo/tesla-9 1.png",
     "jobTitle": "Graphic Designer",
     "companyName": "DesignCraft",
     "jobType": "Part-time",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "img": "../src/assets/Logo/tesla-9 1.png",
+    "img": "../src/assets/Logo/netflix-4 1.png",
     "jobTitle": "Financial Analyst",
     "companyName": "FinancePro",
     "jobType": "Full-time",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "img": "../src/assets/Logo/tesla-9 1.png",
     "jobTitle": "Human Resources Manager",
     "companyName": "HR Solutions",
     "jobType": "Full-time",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "img": "../src/assets/Logo/google-1-1 1-1.png",
+    "img": "../src/assets/Logo/google-1-1 1.png",
     "jobTitle": "Sales Representative",
     "companyName": "SalesForce",
     "jobType": "Commission-based",

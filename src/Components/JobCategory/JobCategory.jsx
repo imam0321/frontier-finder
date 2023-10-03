@@ -30,12 +30,12 @@ const JobCategory = () => {
   ];
 
   return (
-    <div className="mx-60">
+    <div className="md:mx-60">
       <SectionTitle 
         heading={'Job Category List'} 
         subHeading={'Explore thousands of job opportunities with all the information you need. Its your future'}
       ></SectionTitle>
-      <div className="flex justify-around items-center mb-16">
+      <div className="md:flex md:justify-around justify-center items-center mb-16">
       {
         jobCategories.map(category => <JobCategoryDetail 
           key={category.id}

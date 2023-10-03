@@ -22,7 +22,7 @@ const Job = ({ job }) => {
             <span>{salary}</span>
           </div>
         </div>
-        <button onClick={()=> navigate(`/${id}`)} className="rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-5 py-2">View Details</button>
+        <button onClick={()=> navigate(`/job/${id}`)} className={`${job.length = 0 ? 'invisible' : 'visible'}rounded-md bg-gradient-to-r from-sky-500 to-violet-500 text-white font-semibold px-5 py-2`}>View Details</button>
       </div>
     </div>
   );

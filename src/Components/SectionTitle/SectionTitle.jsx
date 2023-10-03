@@ -1,5 +1,4 @@
 
-
 const SectionTitle = ({ heading, subHeading}) => {
   return (
     <div className="text-center mt-20 mb-6">
