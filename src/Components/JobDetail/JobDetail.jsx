@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapIcon} from '@heroicons/react/24/solid'
+import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/solid'
 import { useContext, useState } from "react";
 import { JobsContext } from "../Layout/FirstPage";
 import { addToDb } from "../utilities/fakedb";
@@ -69,7 +69,7 @@ const JobDetail = () => {
               <span>Email : {email}</span>
             </div>
             <div className="flex items-center">
-              <MapIcon className="h-5 w-5 mr-2 text-blue-500" />
+              <MapPinIcon className="h-5 w-5 mr-2 text-blue-500" />
               <span>Address : {location}</span>
             </div>
           </div> 
